@@ -4,15 +4,17 @@ public class TaskDto {
 
     private Long id;
     private String title;
-    private boolean completed;
+    private Boolean completed;
+
 
     public TaskDto() {
     }
 
-    public TaskDto(Long id, String title, boolean completed) {
+    public TaskDto(Long id, String title, Boolean completed) {
         this.id = id;
         this.title = title;
         this.completed = completed;
+
     }
 
     public Long getId() {
@@ -31,11 +33,13 @@ public class TaskDto {
         this.title = title;
     }
 
-    public boolean isCompleted() {
+    public Boolean getCompleted() {
         return completed;
     }
 
-    public void setCompleted(boolean completed) {
+    public void setCompleted(Boolean completed) {
         this.completed = completed;
     }
+
+
 }
