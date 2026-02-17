@@ -10,6 +10,12 @@ public class Task {
     public Task() {
     }
 
+    public Task(String title, Long userId) {
+        this.title = title;
+        this.userId = userId;
+        this.completed = false;
+    }
+
 
     public Long getId() {
         return id;
